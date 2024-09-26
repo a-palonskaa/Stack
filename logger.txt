@@ -1,0 +1,117 @@
+
+
+[FILE]: stack.cpp [LINE]: 50
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 0.
+	Stack capacity is 2.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: main.cpp [LINE]: 13
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 0.
+	Stack capacity is 2.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: stack.cpp [LINE]: 78
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 1.
+	Stack capacity is 2.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: main.cpp [LINE]: 15
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 1.
+	Stack capacity is 2.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: stack.cpp [LINE]: 78
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 2.
+	Stack capacity is 2.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: stack.cpp [LINE]: 78
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 3.
+	Stack capacity is 4.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: main.cpp [LINE]: 21
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 3.
+	Stack capacity is 4.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: stack.cpp [LINE]: 78
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 4.
+	Stack capacity is 4.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: stack.cpp [LINE]: 103
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 3.
+	Stack capacity is 4.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: stack.cpp [LINE]: 103
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 2.
+	Stack capacity is 4.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: stack.cpp [LINE]: 103
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 1.
+	Stack capacity is 1.
+	Stack data pointer is 0x152e060e0.
+
+
+[FILE]: stack.cpp [LINE]: 103
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 0.
+	Stack capacity is 0.
+	Stack data pointer is 0x152f04df0.
+
+
+[FILE]: stack.cpp [LINE]: 63
+26.09.2024 19:57:46 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 0.
+	Stack capacity is 0.
+	Stack data pointer is 0x0.
