@@ -22,9 +22,10 @@ int main() {
         stack_push(&stk, &el);
     }
 
-    for (size_t i = 0; i < 10; i++) {
-        stack_pop(&stk, &el);
-        printf("POPPED ELEMENT IS %d\n", el);
+    for (size_t i = 0; i < 30; i++) {
+        if (stack_pop(&stk, &el) == NO_ERRORS) {
+            printf("POPPED ELEMENT IS %d\n", el);
+        }
     }
 
     stack_dtor(&stk);
@@ -32,5 +33,5 @@ int main() {
     if (fclose(ostream) == EOF) {
         return EXIT_FAILURE;
     }
-    return EXIT_SUCCES;
+    return EXIT_SUCCESS;
 }

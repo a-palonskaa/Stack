@@ -1,115 +1,376 @@
 
 
 [FILE]: stack.cpp [LINE]: 50
-26.09.2024 19:57:46 
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 0.
 	Stack capacity is 2.
-	Stack data pointer is 0x152e060e0.
+	Stack data pointer is 0x14e704080.
 
 
-[FILE]: main.cpp [LINE]: 13
-26.09.2024 19:57:46 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 0.
-	Stack capacity is 2.
-	Stack data pointer is 0x152e060e0.
-
-
-[FILE]: stack.cpp [LINE]: 78
-26.09.2024 19:57:46 
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 1.
 	Stack capacity is 2.
-	Stack data pointer is 0x152e060e0.
+	Stack data pointer is 0x14e704080.
 
 
-[FILE]: main.cpp [LINE]: 15
-26.09.2024 19:57:46 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 1.
-	Stack capacity is 2.
-	Stack data pointer is 0x152e060e0.
-
-
-[FILE]: stack.cpp [LINE]: 78
-26.09.2024 19:57:46 
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 2.
 	Stack capacity is 2.
-	Stack data pointer is 0x152e060e0.
+	Stack data pointer is 0x14e704080.
 
 
-[FILE]: stack.cpp [LINE]: 78
-26.09.2024 19:57:46 
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 3.
 	Stack capacity is 4.
-	Stack data pointer is 0x152e060e0.
+	Stack data pointer is 0x14e704080.
 
 
-[FILE]: main.cpp [LINE]: 21
-26.09.2024 19:57:46 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 3.
-	Stack capacity is 4.
-	Stack data pointer is 0x152e060e0.
-
-
-[FILE]: stack.cpp [LINE]: 78
-26.09.2024 19:57:46 
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 4.
 	Stack capacity is 4.
-	Stack data pointer is 0x152e060e0.
+	Stack data pointer is 0x14e704080.
 
 
-[FILE]: stack.cpp [LINE]: 103
-26.09.2024 19:57:46 
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 5.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f8045c0.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 6.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f8045c0.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 7.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f8045c0.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 8.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f8045c0.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 9.
+	Stack capacity is 16.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 10.
+	Stack capacity is 16.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 11.
+	Stack capacity is 16.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 12.
+	Stack capacity is 16.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 13.
+	Stack capacity is 16.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 14.
+	Stack capacity is 16.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 15.
+	Stack capacity is 16.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 16.
+	Stack capacity is 16.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 17.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 18.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 19.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 82
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 20.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 19.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 18.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 17.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 16.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 15.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 14.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 13.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 12.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 11.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 10.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 9.
+	Stack capacity is 32.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 8.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 7.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 6.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 5.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
+	[ERROR STATUS]: NO ERRORS
+	Width of the stack element is 4.
+	Current stack size is 4.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f804140.
+
+
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 3.
-	Stack capacity is 4.
-	Stack data pointer is 0x152e060e0.
+	Stack capacity is 8.
+	Stack data pointer is 0x14f804140.
 
 
-[FILE]: stack.cpp [LINE]: 103
-26.09.2024 19:57:46 
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 2.
-	Stack capacity is 4.
-	Stack data pointer is 0x152e060e0.
+	Stack capacity is 2.
+	Stack data pointer is 0x14f804140.
 
 
-[FILE]: stack.cpp [LINE]: 103
-26.09.2024 19:57:46 
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 1.
-	Stack capacity is 1.
-	Stack data pointer is 0x152e060e0.
+	Stack capacity is 2.
+	Stack data pointer is 0x14f804140.
 
 
-[FILE]: stack.cpp [LINE]: 103
-26.09.2024 19:57:46 
+[FILE]: stack.cpp [LINE]: 107
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 0.
-	Stack capacity is 0.
-	Stack data pointer is 0x152f04df0.
+	Stack capacity is 2.
+	Stack data pointer is 0x14f804140.
 
 
 [FILE]: stack.cpp [LINE]: 63
-26.09.2024 19:57:46 
+26.09.2024 20:29:31 
 	[ERROR STATUS]: NO ERRORS
 	Width of the stack element is 4.
 	Current stack size is 0.

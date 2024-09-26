@@ -97,7 +97,7 @@ error_t stack_pop(my_stack_t* stk, void* elm) {
     stk->size--;
 
     if (stk->size <= stk->capacity / (CAPACITY_COEFF * CAPACITY_COEFF) &&
-        stk->capacity / (CAPACITY_COEFF * CAPACITY_COEFF) >= stk->base_capacity) {
+        stk->capacity / (CAPACITY_COEFF * CAPACITY_COEFF) > stk->base_capacity) {
         if (stack_resize(stk, SHRINK) != NO_ERRORS) {
             stack_dump(stk, __FILE__, __LINE__);
             return stk->error;
@@ -110,7 +110,7 @@ error_t stack_pop(my_stack_t* stk, void* elm) {
 
 
 error_t stack_assert(my_stack_t* stk, const char* file, size_t line) {
-    if (stack_error(stk) != NO_ERRORS) {
+    if (stack_error(stk) != NO_ERRORS && stk->error != NO_ELEMNTS_TO_POP_ERROR) {
         stack_dump(stk, file, line);
         assert(0);
     }

@@ -9,6 +9,4 @@
         (void) x_;                                        \
     } while (0)
 
-#define CHECKED_(ERROR) if (ERROR != NO_ERRORS) error =
-
 #endif /* DEFINE_H */
