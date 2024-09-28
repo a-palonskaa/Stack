@@ -33,7 +33,12 @@ error_t stack_ctor(my_stack_t* stk, size_t size, size_t base_capacity
     stk->location_info.file = location_info.file;
     stk->location_info.line = location_info.line;
     stk->location_info.func = location_info.func;
-#endif
+#endif /* DEBUG */
+
+#ifdef ON_CANARY_PROTECT
+    stk->left_canary  = LEFT_CANARY_MASK  ^ (uint64_t) stk;
+    stk->rigth_canary = RIGTH_CANARY_MASK ^ (uint64_t) stk;
+#endif /* ON_CANARY_PROTECT */
 
     stk->error = NO_ERRORS;
 
@@ -48,11 +53,27 @@ error_t stack_ctor(my_stack_t* stk, size_t size, size_t base_capacity
         stk->capacity = MIN_CAPACITY;
     }
 
+#ifdef ON_CANARY_PROTECT
+    if (!(stk->data = calloc(stk->capacity * stk->elm_width + 2 * sizeof(canary_t), sizeof(char)))) {
+        stk->error = MEMORY_ALLOCATION_ERROR;
+        STACK_DUMP_(stk);
+        return MEMORY_ALLOCATION_ERROR;
+    };
+
+    memcpy(stk->data, &DATA_CANARY, sizeof(canary_t));
+    stk->data = (void*) ((char*) stk->data + sizeof(canary_t));
+    memcpy((char*) stk->data + stk->capacity * stk->elm_width, &DATA_CANARY, sizeof(canary_t));
+#else
     if (!(stk->data = calloc(stk->capacity, stk->elm_width))) {
         stk->error = MEMORY_ALLOCATION_ERROR;
         STACK_DUMP_(stk);
         return MEMORY_ALLOCATION_ERROR;
     };
+#endif /* ON_CANARY_PROTECT */
+
+#ifdef ON_HASH_PROTECT
+    set_stack_hash(stk);
+#endif /* ON_HASH_PROTECT */
 
     STACK_ASSERT_(stk);
     STACK_DUMP_(stk);
@@ -61,19 +82,25 @@ error_t stack_ctor(my_stack_t* stk, size_t size, size_t base_capacity
 
 error_t stack_dtor(my_stack_t* stk) {
     assert(stk != nullptr);
-
+#ifdef ON_CANARY_PROTECT
+    free((char*) stk->data - sizeof(canary_t));
+#else
     free(stk->data);
+#endif /* ON_CANARY_PROTECT */
     stk->data = nullptr;
+    stk->size = 0;
+    stk->elm_width = 0;
     stk->capacity = 0;
     stk->error = NO_ERRORS;
-    stk->size = 0;
-
+#ifdef ON_HASH_PROTECT
+    set_stack_hash(stk);
+#endif /* ON_HASH_PROTECT */
     STACK_DUMP_(stk);
     return NO_ERRORS;
 }
 
 error_t stack_push(my_stack_t* stk, const void* elm) {
-    assert(stack_error(stk) == NO_ERRORS);
+    assert(stk != nullptr);
     assert(elm != nullptr);
     STACK_ASSERT_(stk);
 
@@ -90,7 +117,9 @@ error_t stack_push(my_stack_t* stk, const void* elm) {
 
     memcpy(((char*) stk->data + stk->size * stk->elm_width), elm, stk->elm_width);
     stk->size++;
-
+#ifdef ON_HASH_PROTECT
+    set_stack_hash(stk);
+#endif /* ON_HASH_PROTECT */
     STACK_DUMP_(stk);
     return NO_ERRORS;
 }
@@ -115,7 +144,9 @@ error_t stack_pop(my_stack_t* stk, void* elm) {
             return stk->error;
         }
     }
-
+#ifdef ON_HASH_PROTECT
+    set_stack_hash(stk);
+#endif /* ON_HASH_PROTECT */
     STACK_DUMP_(stk);
     return NO_ERRORS;
 }
@@ -188,16 +219,32 @@ error_t stack_dump(const my_stack_t* stk, const char* file, size_t line, const c
     fprintf(ostream, "size = %zu.\n\n", stk->size);
 
     fprintf(ostream, "data[%p]\n{\n", stk->data);
-    for (size_t i = 0; i < stk->size; i++) {
-        fprintf(ostream, "*[%05zu] = ", i); //REVIEW %*s, 5, ""
-        for (size_t j = 0; j < stk->elm_width; j++) {
-            fprintf(ostream, "%x ", *((char*) stk->data + i * stk->elm_width + j));
+    if (stk->data != nullptr) {
+        for (size_t i = 0; i < stk->size; i++) {
+            fprintf(ostream, "*[%05zu] = ", i);
+            for (ssize_t j = (ssize_t) stk->elm_width - 1; j >= 0; j--) {
+                fprintf(ostream, "%x ", *((char*) stk->data + i * stk->elm_width + j));
+            }
+            fprintf(ostream, "\n");
         }
-        fprintf(ostream, "\n");
+        fprintf(ostream, "}\n\n");
     }
-    fprintf(ostream, "}\n");
-
-    fprintf(ostream, "LEFT STACK CANARY PROTECT \n");
+#ifdef ON_CANARY_PROTECT
+    fprintf(ostream, "LEFT  STACK CANARY PROTECT IS\n\t%llx(without mask)\n\t%llx(with mask)\n",
+                     stk->left_canary,  stk->left_canary  ^ (canary_t) stk);
+    fprintf(ostream, "RIGHT STACK CANARY PROTECT IS\n\t%llx(without mask)\n\t%llx(with mask)\n",
+                     stk->rigth_canary, stk->rigth_canary ^ (canary_t) stk);
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wcast-align"
+    if (stk->data != nullptr) {
+        fprintf(ostream, "%llx\n", *((canary_t*)((char*) stk->data - sizeof(canary_t))));
+        fprintf(ostream, "%llx\n", *((canary_t*)((char*) stk->data + stk->capacity * stk->elm_width)));
+    }
+#pragma clang diagnostic pop
+#endif /* ON_CANARY_PROTECT */
+#ifdef ON_HASH_PROTECTION
+    fprintf(ostream, "STACK HASH IS %ull\nDATA HASH is %ull\n", stk->hash_data, stk->hash_stack);
+#endif /* ON_HASH_PROTECTION */
     fprintf(ostream, "\n\n");
     return stk->error;
 }
@@ -211,18 +258,42 @@ error_t stack_resize(my_stack_t* stk, mem_modify_t mode) {
     else {
         stk->capacity = stk->capacity / (CAPACITY_COEFF * CAPACITY_COEFF);
     }
+#ifdef ON_CANARY_PROTECT
+    void* new_data_ptr = realloc((char*) stk->data - sizeof(canary_t),
+                                  stk->capacity * stk->elm_width + 2 * sizeof(canary_t));
+    if (!new_data_ptr) {
+        stk->error = MEMORY_REALLOCATION_ERROR;
+        return MEMORY_REALLOCATION_ERROR;
+    }
 
+    memcpy(new_data_ptr, &DATA_CANARY, sizeof(canary_t));
+    stk->data = (void*) ((char*) new_data_ptr + sizeof(canary_t));
+    memcpy((char*) stk->data + stk->capacity * stk->elm_width, &DATA_CANARY, sizeof(canary_t));
+#else
     void* new_data_ptr = realloc(stk->data, stk->capacity * stk->elm_width);
     if (!new_data_ptr) {
         stk->error = MEMORY_REALLOCATION_ERROR;
         return MEMORY_REALLOCATION_ERROR;
     }
     stk->data = new_data_ptr;
+#endif /* ON_CANARY_PROTECT */
     return NO_ERRORS;
 }
 
 error_t stack_error(my_stack_t* stk) {
     assert(stk != nullptr);
+
+#ifdef ON_CANARY_PROTECT
+    if ((stk->left_canary ^ (uint64_t) stk) != LEFT_CANARY_MASK) {
+        stk->error = LEFT_CANARY_PROTECT_FAILURE;
+        return LEFT_CANARY_PROTECT_FAILURE;
+    }
+
+    if ((stk->rigth_canary ^ (uint64_t) stk) != RIGTH_CANARY_MASK) {
+        stk->error = RIGTH_CANARY_PROTECT_FAILURE;
+        return RIGTH_CANARY_PROTECT_FAILURE;
+    }
+#endif /* ON_CANARY_PROTECT */
 
     if (stk->error != NO_ERRORS) {
         return stk->error;
@@ -253,9 +324,74 @@ error_t stack_error(my_stack_t* stk) {
         return NULL_ELEMENT_WIDTH_ERROR;
     }
 
+#ifdef ON_CANARY_PROTECT
+    if (memcmp((canary_t*) stk->data - 1, &DATA_CANARY, sizeof(canary_t)) ||
+        memcmp((char*) stk->data + stk->capacity * stk->elm_width, &DATA_CANARY, sizeof(canary_t))) {
+        stk->error = DATA_CANARY_PROTECT_FAILURE;
+        return DATA_CANARY_PROTECT_FAILURE;
+    }
+#endif /* ON_CANARY_PROTECT */
+
+#ifdef ON_HASH_PROTECT
+    stack_hash(stk, &hash_data, &hash_stack);
+    if (hash_data != stk->hash_data || hash_stack != stk->hash_stack) {
+        stk->error = HASH_PROTECTION_FAILED;
+        return HASH_PROTECTION_FAILED;
+    }
+#endif /* ON_HASH_PROTECT */
+
     stk->error = NO_ERRORS;
     return NO_ERRORS;
 }
+
+#ifdef ON_HASH_PROTECT
+void set_stack_hash(my_stack_t* stk) {
+    assert(stk != nullptr);
+
+    hash_t new_hash_data = 0;
+    hash_t new_hash_stack = 0;
+
+    stack_hash(stk, &new_hash_data, &new_hash_stack);
+
+    stk->hash_data = new_hash_data;
+    stk->hash_stack = new_hash_stack;
+}
+
+hash_t stack_hash(my_stack_t* stk, hash_t* new_hash_data, hash_t* new_hash_stack) {
+    assert(stk != nullptr);
+    assert(new_hash_data != nullptr);
+    assert(new_hash_stack != nullptr);
+
+    void* data_ptr = stk->data;
+    stk->data = nullptr;
+    hash_t hash_stack = stk->hash_stack;
+    stk->hash_stack = 0;
+    hash_t hash_data = stk->hash_data;
+    stk->hash_data = 0;
+
+    *new_hash_stack = stack_hash_counter(stk, sizeof(stk));
+
+    if (data_ptr == nullptr) {
+        *new_hash_data = 0;
+    }
+    else {
+        *new_hash_data  = stack_hash_counter(data_ptr, stk->capacity);
+    }
+
+    stk->hash_stack = hash_stack;
+    stk->hash_data = hash_data;
+    stk->data = data_ptr;
+    return *new_hash_stack;
+}
+hash_t stack_hash_counter(const void* buffer, size_t buffer_bytes_amount) {
+    buffer = (const char*) buffer;
+    hash_t hash = 5381;
+    for (size_t i = 0; i < buffer_bytes_amount; i++) {
+        hash = hash * 31 ^ *str++; /* hash * 33 + c */
+    }
+    return hash;
+}
+#endif /* ON_HASH_PROTECT */
 
 static void print_time(FILE *ostream) {
     assert(ostream != nullptr);

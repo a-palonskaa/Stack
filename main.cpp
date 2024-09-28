@@ -27,7 +27,6 @@ int main() {
             printf("POPPED ELEMENT IS %d\n", el);
         }
     }
-
     stack_dtor(&stk);
 
     if (fclose(ostream) == EOF) {
