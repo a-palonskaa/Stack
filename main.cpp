@@ -5,7 +5,6 @@
 
 int main() {
     const int BASE_CAPACITY = 2;
-    my_stack_t stk = {};
 
     FILE* ostream = fopen("logger.txt", "w");
     if (!ostream) {
@@ -14,7 +13,8 @@ int main() {
 
     set_stack_dump_ostream(ostream);
 
-    stack_ctor(&stk, sizeof(int), BASE_CAPACITY);
+    my_stack_t stk = {};
+    STACK_CTOR_(&stk, sizeof(int), BASE_CAPACITY);
 
     int el = 0;
     for (size_t i = 0; i < 20; i++) {

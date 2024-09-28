@@ -1,378 +1,1072 @@
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:57(stack_ctor)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 2.
+size = 0.
+
+data[0x1396060e0]
+{
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 2.
+size = 1.
+
+data[0x1396060e0]
+{
+*[00000] = 0 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 2.
+size = 2.
+
+data[0x1396060e0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 4.
+size = 3.
+
+data[0x1396060e0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 4.
+size = 4.
+
+data[0x1396060e0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 5.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 6.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 7.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 8.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 16.
+size = 9.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 16.
+size = 10.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 16.
+size = 11.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 16.
+size = 12.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 16.
+size = 13.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 16.
+size = 14.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 16.
+size = 15.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 16.
+size = 16.
+
+data[0x139605fc0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 17.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+*[00016] = 10 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 18.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+*[00016] = 10 0 0 0 
+*[00017] = 11 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 19.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+*[00016] = 10 0 0 0 
+*[00017] = 11 0 0 0 
+*[00018] = 12 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:89(stack_push)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 20.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+*[00016] = 10 0 0 0 
+*[00017] = 11 0 0 0 
+*[00018] = 12 0 0 0 
+*[00019] = 13 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 19.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+*[00016] = 10 0 0 0 
+*[00017] = 11 0 0 0 
+*[00018] = 12 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 18.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+*[00016] = 10 0 0 0 
+*[00017] = 11 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 17.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+*[00016] = 10 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 16.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+*[00015] = f 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 15.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+*[00014] = e 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 14.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+*[00013] = d 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 13.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+*[00012] = c 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 12.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+*[00011] = b 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 11.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+*[00010] = a 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 10.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+*[00009] = 9 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 32.
+size = 9.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+*[00008] = 8 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 8.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+*[00007] = 7 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 7.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+*[00006] = 6 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 6.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+*[00005] = 5 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 5.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+*[00004] = 4 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 4.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+*[00003] = 3 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 8.
+size = 3.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+*[00002] = 2 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 2.
+size = 2.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+*[00001] = 1 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 2.
+size = 1.
+
+data[0x1396068f0]
+{
+*[00000] = 0 0 0 0 
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:114(stack_pop)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 2.
+size = 0.
+
+data[0x1396068f0]
+{
+}
+LEFT STACK CANARY PROTECT 
+
+
+stack_t [0x16d463220]
+28.09.2024 00:43:43 
+called from stack.cpp:70(stack_dtor)
+name &stk born at main.cpp:17(main)
+
+[ERROR STATUS]: 1
+element width = 4.
+capacity = 0.
+size = 0.
+
+data[0x0]
+{
+}
+LEFT STACK CANARY PROTECT 
 
 
-[FILE]: stack.cpp [LINE]: 50
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 0.
-	Stack capacity is 2.
-	Stack data pointer is 0x14e704080.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 1.
-	Stack capacity is 2.
-	Stack data pointer is 0x14e704080.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 2.
-	Stack capacity is 2.
-	Stack data pointer is 0x14e704080.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 3.
-	Stack capacity is 4.
-	Stack data pointer is 0x14e704080.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 4.
-	Stack capacity is 4.
-	Stack data pointer is 0x14e704080.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 5.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f8045c0.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 6.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f8045c0.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 7.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f8045c0.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 8.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f8045c0.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 9.
-	Stack capacity is 16.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 10.
-	Stack capacity is 16.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 11.
-	Stack capacity is 16.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 12.
-	Stack capacity is 16.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 13.
-	Stack capacity is 16.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 14.
-	Stack capacity is 16.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 15.
-	Stack capacity is 16.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 16.
-	Stack capacity is 16.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 17.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 18.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 19.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 82
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 20.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 19.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 18.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 17.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 16.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 15.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 14.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 13.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 12.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 11.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 10.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 9.
-	Stack capacity is 32.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 8.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 7.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 6.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 5.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 4.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 3.
-	Stack capacity is 8.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 2.
-	Stack capacity is 2.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 1.
-	Stack capacity is 2.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 107
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 0.
-	Stack capacity is 2.
-	Stack data pointer is 0x14f804140.
-
-
-[FILE]: stack.cpp [LINE]: 63
-26.09.2024 20:29:31 
-	[ERROR STATUS]: NO ERRORS
-	Width of the stack element is 4.
-	Current stack size is 0.
-	Stack capacity is 0.
-	Stack data pointer is 0x0.
