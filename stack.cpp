@@ -22,12 +22,13 @@ void set_stack_dump_ostream(FILE* ostream) {
 
 error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity
                    ON_DEBUG(, location_info_t location_info)) {
-    assert(base_capacity != 0);
+    assert(stk != nullptr);
 
     if (stack_error(stk) == NO_ERRORS) {
         STACK_DUMP_(stk);
         return STACK_ALREADY_INITIALIZED_ERROR;
     }
+    stk->error = NO_ERRORS;
 
 #ifdef DEBUG
     stk->location_info.stack_name = location_info.stack_name;
@@ -38,16 +39,15 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity
 
 #ifdef ON_CANARY_PROTECT
     stk->left_canary  = LEFT_CANARY_MASK  ^ (canary_t) stk;
-    stk->rigth_canary = RIGTH_CANARY_MASK ^ (uint64_t) stk;
+    stk->rigth_canary = RIGTH_CANARY_MASK ^ (canary_t) stk;
 #endif /* ON_CANARY_PROTECT */
 
-    stk->error = NO_ERRORS;
-
-    if (!(stk->elm_width = elm_size)) {
+    if (!elm_size) {
         stk->error = ELEMENT_WIDTH_ERROR;
         STACK_DUMP_(stk);
         return ELEMENT_WIDTH_ERROR;
     }
+    stk->elm_width = elm_size;
 
     STATIC_ASSERT(MIN_CAPACITY > 0, Minimum_capacity_should_be_greater_than_0);
     stk->capacity = base_capacity > MIN_CAPACITY ?
@@ -185,7 +185,7 @@ error_t stack_dump(const my_stack_t* stk, const char* file, size_t line, const c
     fprintf(ostream, "size = %zu\n\n", stk->size);
 
     fprintf(ostream, "data[%p]\n{\n", stk->data);
-    if (!is_data_nullptr) {
+    if (stk->data) {
         for (size_t i = 0; i < stk->size; i++) {
             fprintf(ostream, "*[%08zX] = ", i);
             for (ssize_t j = (ssize_t) stk->elm_width - 1; j >= 0; j--) {

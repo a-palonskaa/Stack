@@ -1,101 +1,101 @@
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:79(stack_ctor)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 2
 size = 0
 
-data[0x121e06048]
+data[0x14bf05c08]
 {
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 2
 size = 1
 
-data[0x121e06048]
+data[0x14bf05c08]
 {
 *[00000000] = 0 0 0 0 
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 2
 size = 2
 
-data[0x121e06048]
+data[0x14bf05c08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 4
 size = 3
 
-data[0x121e06048]
+data[0x14bf05c08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -103,30 +103,30 @@ data[0x121e06048]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x28340A85
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 4
 size = 4
 
-data[0x121e06048]
+data[0x14bf05c08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -135,30 +135,30 @@ data[0x121e06048]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x28340A85
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 5
 
-data[0x121e06048]
+data[0x14bf05f48]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -168,30 +168,30 @@ data[0x121e06048]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x8270CBA6
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 6
 
-data[0x121e06048]
+data[0x14bf05f48]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -202,30 +202,30 @@ data[0x121e06048]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x8270CBA6
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 7
 
-data[0x121e06048]
+data[0x14bf05f48]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -237,30 +237,30 @@ data[0x121e06048]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x8270CBA6
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 8
 
-data[0x121e06048]
+data[0x14bf05f48]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -273,30 +273,30 @@ data[0x121e06048]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x8270CBA6
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 9
 
-data[0x121e06968]
+data[0x14bf05a08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -310,30 +310,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 10
 
-data[0x121e06968]
+data[0x14bf05a08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -348,30 +348,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 11
 
-data[0x121e06968]
+data[0x14bf05a08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -387,30 +387,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 12
 
-data[0x121e06968]
+data[0x14bf05a08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -427,30 +427,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 13
 
-data[0x121e06968]
+data[0x14bf05a08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -468,30 +468,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 14
 
-data[0x121e06968]
+data[0x14bf05a08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -510,30 +510,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 15
 
-data[0x121e06968]
+data[0x14bf05a08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -553,30 +553,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 16
 
-data[0x121e06968]
+data[0x14bf05a08]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -597,30 +597,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 17
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -642,30 +642,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 18
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -688,30 +688,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 19
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -735,30 +735,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 20
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -783,30 +783,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 19
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -830,30 +830,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 18
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -876,30 +876,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 17
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -921,30 +921,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 16
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -965,30 +965,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 15
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1008,30 +1008,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 14
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1050,30 +1050,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 13
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1091,30 +1091,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 12
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1131,30 +1131,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 11
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1170,30 +1170,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 10
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1208,30 +1208,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 9
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1245,30 +1245,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x25454105
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 8
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1281,30 +1281,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 7
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1316,30 +1316,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 6
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1350,30 +1350,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 5
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1383,30 +1383,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0xAB14C905
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 4
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1415,30 +1415,30 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x8270CBA6
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 3
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
@@ -1446,110 +1446,110 @@ data[0x121e06968]
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x8270CBA6
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 4
 size = 2
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 *[00000001] = 0 0 0 1 
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x28340A85
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 2
 size = 1
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 *[00000000] = 0 0 0 0 
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 2
 size = 0
 
-data[0x121e06968]
+data[0x14bf05ca8]
 {
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 
-stack_t [0x16cef3208]
-29.09.2024 10:40:57 
+stack_t [0x16ae07208]
+29.09.2024 15:57:06 
 called from stack.cpp:98(stack_dtor)
-name &stk born at main.cpp:17(main)
+name &stk born at main.cpp:18(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 0
@@ -1559,13 +1559,13 @@ size = 0
 data[0x0]
 {
 LEFT  STACK CANARY PROTECT: 
-	16C2FCDE6(without mask)
+	16A208DE6(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	197428CE7(without mask)
+	1914DCCE7(without mask)
 	fbadbeef(with mask)
 
 STACK HASH:  0x0
-DATA HASH:  0x946AF2F0
+DATA HASH:  0x4A6797C3
 ---------------------------------------------------------------------------------
 

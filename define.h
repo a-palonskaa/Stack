@@ -1,6 +1,19 @@
 #ifndef DEFINE_H
 #define DEFINE_H
 
+#ifdef GUARD_L0
+    #undef ON_CANARY_PROTECT
+    #undef ON_HASH_PROTECT
+#endif /* GUARD_L0 */
+#ifdef GUARD_L1
+    #undef ON_HASH_PROTECT
+    #define ON_CANARY_PROTECT
+#endif /* GUARD_L1 */
+#ifdef GUARD_L2
+    #define ON_HASH_PROTECT
+    #define ON_CANARY_PROTECT
+#endif /* GUARD_L2 */
+
 #define STATIC_ASSERT(COND,MSG)                           \
     do                                                    \
     {                                                     \

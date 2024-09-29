@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -Wall -std=c++17 -DDEBUG -Wall -Wextra -Weffc++ -Wc++14-compat -Wmissing-declarations \
+CFLAGS = -Wall -std=c++17 -Wall -Wextra -Weffc++ -Wc++14-compat -Wmissing-declarations \
 		 -Wcast-align -Wcast-qual -Wchar-subscripts -Wconversion -Wctor-dtor-privacy           \
 		 -Wempty-body -Wfloat-equal -Wformat-nonliteral -Wformat-security -Wformat=2           \
 		 -Winline -Wnon-virtual-dtor -Woverloaded-virtual -Wpacked -Wpointer-arith             \
@@ -10,7 +10,7 @@ CFLAGS = -Wall -std=c++17 -DDEBUG -Wall -Wextra -Weffc++ -Wc++14-compat -Wmissin
 		 -Wno-varargs -Wstack-protector -Wsuggest-override -Wbounds-attributes-redundant       \
 		 -Wlong-long -Wopenmp -fcheck-new -fsized-deallocation -fstack-protector 		       \
 		 -fstrict-overflow -fno-omit-frame-pointer -Wlarger-than=8192 -Wstack-protector        \
-		 -fPIE -Werror=vla -D ON_HASH_PROTECT -D ON_CANARY_PROTECT
+		 -fPIE -Werror=vla
 
 SOURCES = main.cpp stack.cpp
 BUILD_DIR = build
@@ -18,9 +18,15 @@ OBJECTS = $(addprefix $(BUILD_DIR)/, $(SOURCES:%.cpp=%.o))
 DEPS = $(OBJECTS:%.o=%.d)
 EXECUTABLE = build/stack
 
-.PHONY: clean all
+.PHONY: all debug release
 
-all: $(EXECUTABLE)
+all: release
+
+debug: CFLAGS += -D DEBUG -D GUARD_L2
+debug: $(EXECUTABLE)
+
+release: CFLAGS += -O2 -DNDEBUG
+release: $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
 	@$(CC) $(LDFLAGS) $^ -o $@
