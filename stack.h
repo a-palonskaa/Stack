@@ -7,6 +7,9 @@
 #include <stdlib.h>
 #include "define.h"
 
+// forward declaration
+// struct my_stack_t;
+
 typedef enum {
     NO_ERRORS                       = 0x00000000,
     MEMORY_ALLOCATION_ERROR         = 0x00000001,
@@ -33,25 +36,28 @@ typedef enum {
 
 typedef enum {
     EXPAND = 0,
-    SHRINK = 1
+    SHRINK = 1,
 } mem_modify_t;
 
 #ifdef DEBUG
     typedef struct {
-        const char* name;
+        const char* stack_name;
         const char* file;
         size_t line;
         const char* func;
     } location_info_t;
 #endif /* DEBUG */
+
 #ifdef ON_CANARY_PROTECT
 typedef unsigned long long canary_t;
-const canary_t RIGTH_CANARY_MASK = 0xFBADBEEF;
 const canary_t LEFT_CANARY_MASK  = 0xC0FFEE;
+const canary_t RIGTH_CANARY_MASK = 0xFBADBEEF;
 const canary_t DATA_CANARY       = 0x3DAD;
 #endif /* ON_CANARY_PROTECT */
+
 #ifdef ON_HASH_PROTECT
 typedef uint32_t hash_t;
+#define HASH_SPEC "0x%0X"
 #endif /* ON_HASH_PROTECT */
 
 typedef struct {
@@ -73,10 +79,11 @@ typedef struct {
 #ifdef ON_HASH_PROTECT
     hash_t hash_stack;
     hash_t hash_data;
-#endif
+#endif /* ON_HASH_PROTECT */
 } my_stack_t;
 
-error_t stack_ctor(my_stack_t* stk, size_t size, size_t base_capacity ON_DEBUG(, location_info_t location_info));
+error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity
+                   ON_DEBUG(, location_info_t location_info));
 error_t stack_dtor(my_stack_t* stk);
 error_t stack_resize(my_stack_t* stk, mem_modify_t mode);
 
