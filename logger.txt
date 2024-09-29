@@ -1,1555 +1,1897 @@
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:79(stack_ctor)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from stack.cpp:75(stack_ctor)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 2
 size = 0
 
-data[0x14bf05c08]
+data[0x12a704098]
 {
+ [00000000] = de ad de ad de ad de ad de ad   (poison value)
+ [00000001] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x4EE7C5
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x4EED54
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 2
 size = 1
 
-data[0x14bf05c08]
+data[0x12a704098]
 {
-*[00000000] = 0 0 0 0 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+ [00000001] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x4A6797C3
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 2
 size = 2
 
-data[0x14bf05c08]
+data[0x12a704098]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x4A6797C3
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 4
 size = 3
 
-data[0x14bf05c08]
+data[0x12a605e68]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+ [00000003] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x28340A85
-DATA HASH:  0x4A6797C3
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 4
 size = 4
 
-data[0x14bf05c08]
+data[0x12a605e68]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x28340A85
-DATA HASH:  0x4A6797C3
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 8
 size = 5
 
-data[0x14bf05f48]
+data[0x12a605e08]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+ [00000005] = de ad de ad de ad de ad de ad   (poison value)
+ [00000006] = de ad de ad de ad de ad de ad   (poison value)
+ [00000007] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x8270CBA6
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x7D69AB10
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 8
 size = 6
 
-data[0x14bf05f48]
+data[0x12a605e08]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+ [00000006] = de ad de ad de ad de ad de ad   (poison value)
+ [00000007] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x8270CBA6
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x7D69AB10
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 8
 size = 7
 
-data[0x14bf05f48]
+data[0x12a605e08]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+ [00000007] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x8270CBA6
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x7D69AB10
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 8
 size = 8
 
-data[0x14bf05f48]
+data[0x12a605e08]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x8270CBA6
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x7D69AB10
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 9
 
-data[0x14bf05a08]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+ [00000009] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 10
 
-data[0x14bf05a08]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+ [0000000A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 11
 
-data[0x14bf05a08]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+ [0000000B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 12
 
-data[0x14bf05a08]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+ [0000000C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 13
 
-data[0x14bf05a08]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 14
 
-data[0x14bf05a08]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 15
 
-data[0x14bf05a08]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 16
 
-data[0x14bf05a08]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 17
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
-*[00000010] = 0 0 0 10 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+ [00000011] = de ad de ad de ad de ad de ad   (poison value)
+ [00000012] = de ad de ad de ad de ad de ad   (poison value)
+ [00000013] = de ad de ad de ad de ad de ad   (poison value)
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 18
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
-*[00000010] = 0 0 0 10 
-*[00000011] = 0 0 0 11 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+ [00000012] = de ad de ad de ad de ad de ad   (poison value)
+ [00000013] = de ad de ad de ad de ad de ad   (poison value)
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 19
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
-*[00000010] = 0 0 0 10 
-*[00000011] = 0 0 0 11 
-*[00000012] = 0 0 0 12 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+ [00000013] = de ad de ad de ad de ad de ad   (poison value)
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:123(stack_push)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:32(stack_push)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 20
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
-*[00000010] = 0 0 0 10 
-*[00000011] = 0 0 0 11 
-*[00000012] = 0 0 0 12 
-*[00000013] = 0 0 0 13 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 19
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
-*[00000010] = 0 0 0 10 
-*[00000011] = 0 0 0 11 
-*[00000012] = 0 0 0 12 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 18
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
-*[00000010] = 0 0 0 10 
-*[00000011] = 0 0 0 11 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 17
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
-*[00000010] = 0 0 0 10 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 16
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
-*[0000000F] = 0 0 0 F 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 15
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
-*[0000000E] = 0 0 0 E 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 14
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
-*[0000000D] = 0 0 0 D 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 13
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
-*[0000000C] = 0 0 0 C 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 12
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
-*[0000000B] = 0 0 0 B 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 11
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
-*[0000000A] = 0 0 0 A 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 10
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
-*[00000009] = 0 0 0 9 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 32
 size = 9
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
-*[00000008] = 0 0 0 8 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+*[00000008] = 00 01 04 b4 7a 75 00 00 00 08 
+*[00000009] = 00 01 04 b4 7a 75 00 00 00 09 
+*[0000000A] = 00 01 04 b4 7a 75 00 00 00 0a 
+*[0000000B] = 00 01 04 b4 7a 75 00 00 00 0b 
+*[0000000C] = 00 01 04 b4 7a 75 00 00 00 0c 
+*[0000000D] = 00 01 04 b4 7a 75 00 00 00 0d 
+*[0000000E] = 00 01 04 b4 7a 75 00 00 00 0e 
+*[0000000F] = 00 01 04 b4 7a 75 00 00 00 0f 
+*[00000010] = 00 01 04 b4 7a 75 00 00 00 10 
+*[00000011] = 00 01 04 b4 7a 75 00 00 00 11 
+*[00000012] = 00 01 04 b4 7a 75 00 00 00 12 
+*[00000013] = 00 01 04 b4 7a 75 00 00 00 13 
+ [00000014] = de ad de ad de ad de ad de ad   (poison value)
+ [00000015] = de ad de ad de ad de ad de ad   (poison value)
+ [00000016] = de ad de ad de ad de ad de ad   (poison value)
+ [00000017] = de ad de ad de ad de ad de ad   (poison value)
+ [00000018] = de ad de ad de ad de ad de ad   (poison value)
+ [00000019] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000001F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x25454105
-DATA HASH:  0x4A6797C3
+STACK HASH:  0xC198D6F
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 8
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
-*[00000007] = 0 0 0 7 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+ [00000008] = de ad de ad de ad de ad de ad   (poison value)
+ [00000009] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 7
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
-*[00000006] = 0 0 0 6 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+ [00000008] = de ad de ad de ad de ad de ad   (poison value)
+ [00000009] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 6
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
-*[00000005] = 0 0 0 5 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+ [00000008] = de ad de ad de ad de ad de ad   (poison value)
+ [00000009] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 16
 size = 5
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
-*[00000004] = 0 0 0 4 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+*[00000004] = 00 01 04 b4 7a 75 00 00 00 04 
+*[00000005] = 00 01 04 b4 7a 75 00 00 00 05 
+*[00000006] = 00 01 04 b4 7a 75 00 00 00 06 
+*[00000007] = 00 01 04 b4 7a 75 00 00 00 07 
+ [00000008] = de ad de ad de ad de ad de ad   (poison value)
+ [00000009] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000A] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000B] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000C] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000D] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000E] = de ad de ad de ad de ad de ad   (poison value)
+ [0000000F] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0xAB14C905
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x6501F1A1
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 8
 size = 4
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
-*[00000003] = 0 0 0 3 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+ [00000004] = de ad de ad de ad de ad de ad   (poison value)
+ [00000005] = de ad de ad de ad de ad de ad   (poison value)
+ [00000006] = de ad de ad de ad de ad de ad   (poison value)
+ [00000007] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x8270CBA6
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x7D69AB10
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 8
 size = 3
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
-*[00000002] = 0 0 0 2 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+*[00000002] = 00 01 04 b4 7a 75 00 00 00 02 
+*[00000003] = 00 01 04 b4 7a 75 00 00 00 03 
+ [00000004] = de ad de ad de ad de ad de ad   (poison value)
+ [00000005] = de ad de ad de ad de ad de ad   (poison value)
+ [00000006] = de ad de ad de ad de ad de ad   (poison value)
+ [00000007] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
-STACK HASH:  0x8270CBA6
-DATA HASH:  0x4A6797C3
+STACK HASH:  0x7D69AB10
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 4
 size = 2
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
-*[00000001] = 0 0 0 1 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+*[00000001] = 00 01 04 b4 7a 75 00 00 00 01 
+ [00000002] = de ad de ad de ad de ad de ad   (poison value)
+ [00000003] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x28340A85
-DATA HASH:  0x4A6797C3
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 2
 size = 1
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
-*[00000000] = 0 0 0 0 
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+ [00000001] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x4A6797C3
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:150(stack_pop)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from pop_push.cpp:61(stack_pop)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
-element width = 4
+element width = 10
 capacity = 2
 size = 0
 
-data[0x14bf05ca8]
+data[0x12a606968]
 {
+*[00000000] = 00 01 04 b4 7a 75 00 00 00 00 
+ [00000001] = de ad de ad de ad de ad de ad   (poison value)
 }
 
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 LEFT DATA CANARY PROTECT:  3DAD
 RIGHT DATA CANARY PROTECT: 3DAD
 
 STACK HASH:  0x4EE7C5
-DATA HASH:  0x4A6797C3
+DATA HASH:   0x463B272C
 ---------------------------------------------------------------------------------
 
-stack_t [0x16ae07208]
-29.09.2024 15:57:06 
-called from stack.cpp:98(stack_dtor)
-name &stk born at main.cpp:18(main)
+stack_t [0x16b2bb1f0]
+29.09.2024 18:21:27 
+called from stack.cpp:95(stack_dtor)
+name &stk born at main.cpp:23(main)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 0
@@ -1558,14 +1900,16 @@ size = 0
 
 data[0x0]
 {
+}
+
 LEFT  STACK CANARY PROTECT: 
-	16A208DE6(without mask)
+	16BEB4E1E(without mask)
 	c0ffee(with mask)
 RIGHT STACK CANARY PROTECT: 
-	1914DCCE7(without mask)
+	190860F1F(without mask)
 	fbadbeef(with mask)
 
 STACK HASH:  0x0
-DATA HASH:  0x4A6797C3
+DATA HASH:   0x0
 ---------------------------------------------------------------------------------
 

@@ -1,7 +1,13 @@
 #include <stdio.h>
 
 #include "stack.h"
+#include "pop_push.h"
+#include "verify.h"
 #include "define.h"
+
+#ifdef ON_HASH_PROTECT
+    #include "hash.h"
+#endif /* ON_HASH_PROTECT */
 
 int main() {
     const int BASE_CAPACITY = 2;
@@ -14,7 +20,7 @@ int main() {
     set_stack_dump_ostream(ostream);
 
     my_stack_t stk = {};
-    STACK_CTOR_(&stk, sizeof(int), BASE_CAPACITY);
+    STACK_CTOR_(&stk, 10, BASE_CAPACITY, print_10bytes);
 
     int el = 0;
     for (size_t i = 0; i < 20; i++) {

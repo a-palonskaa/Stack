@@ -7,8 +7,12 @@
 #include <stdlib.h>
 #include "define.h"
 
-// forward declaration
-// struct my_stack_t;
+ON_HASH_PROTECT(typedef uint32_t hash_t;)
+
+const size_t CAPACITY_COEFF = 2;
+const size_t MIN_CAPACITY = 1;
+const size_t MAX_CAPACITY = 1e6;
+const uint64_t POISON_VALUE = 0xDEADDEADDEADDEAD;
 
 typedef enum {
     NO_ERRORS                       = 0x00000000,
@@ -23,20 +27,22 @@ typedef enum {
     STACK_ALREADY_INITIALIZED_ERROR = 0x00000400,
     CAPACITY_LIMIT_EXCEED_ERROR     = 0x00001000,
 
-#ifdef ON_CANARY_PROTECT
+#ifdef CANARY_PROTECT
     LEFT_CANARY_PROTECT_FAILURE     = 0x00002000,
     RIGTH_CANARY_PROTECT_FAILURE    = 0x00004000,
     DATA_CANARY_PROTECT_FAILURE     = 0x00010000,
-#endif /* ON_CANARY_PROTECT */
+#endif /* CANARY_PROTECT */
 
-#ifdef ON_HASH_PROTECT
+#ifdef HASH_PROTECT
     HASH_PROTECTION_FAILED          = 0x00020000,
-#endif /* ON_HASH_PROTECT */
+#endif /* HASH_PROTECT */
 } error_t;
 
 typedef enum {
-    EXPAND = 0,
-    SHRINK = 1,
+    EXPAND       = 0,
+    SQUEEZE      = 1,
+    SHINK_TO_FIT = 2,
+
 } mem_modify_t;
 
 #ifdef DEBUG
@@ -48,58 +54,46 @@ typedef enum {
     } location_info_t;
 #endif /* DEBUG */
 
-#ifdef ON_CANARY_PROTECT
+#ifdef CANARY_PROTECT
 typedef unsigned long long canary_t;
 const canary_t LEFT_CANARY_MASK  = 0xC0FFEE;
 const canary_t RIGTH_CANARY_MASK = 0xFBADBEEF;
 const canary_t DATA_CANARY       = 0x3DAD;
-#endif /* ON_CANARY_PROTECT */
+#endif /* CANARY_PROTECT */
 
-#ifdef ON_HASH_PROTECT
-typedef uint32_t hash_t;
-#define HASH_SPEC "0x%0X"
-#endif /* ON_HASH_PROTECT */
+typedef void (*print_t) (void* elm, FILE* ostream);
 
 typedef struct {
-#ifdef ON_CANARY_PROTECT
+#ifdef CANARY_PROTECT
     canary_t left_canary;
-#endif /* ON_CANARY_PROTECT */
+#endif /* CANARY_PROTECT */
     void* data;
     size_t elm_width;
     size_t size;
     size_t capacity;
     size_t base_capacity;
     error_t error;
+    uint64_t poison_value;
+    char* poison_value_buffer;
+    print_t print;
 #ifdef DEBUG
     location_info_t location_info;
 #endif /* DEBUG */
-#ifdef ON_CANARY_PROTECT
+#ifdef CANARY_PROTECT
     canary_t rigth_canary;
-#endif /* ON_CANARY_PROTECT */
-#ifdef ON_HASH_PROTECT
+#endif /* CANARY_PROTECT */
+#ifdef HASH_PROTECT
     hash_t hash_stack;
     hash_t hash_data;
-#endif /* ON_HASH_PROTECT */
+#endif /* HASH_PROTECT */
 } my_stack_t;
 
-error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity
+error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print_t print
                    ON_DEBUG(, location_info_t location_info));
 error_t stack_dtor(my_stack_t* stk);
 error_t stack_resize(my_stack_t* stk, mem_modify_t mode);
-
-error_t stack_push(my_stack_t* stk, const void* elm);
-error_t stack_pop(my_stack_t* stk, void* elm);
-
-void set_stack_dump_ostream(FILE* ostream);
-error_t stack_dump(const my_stack_t* stk, const char* file, size_t line, const char* func);
-error_t stack_error(my_stack_t* stk);
-error_t stack_assert(my_stack_t* stk, const char* file, size_t line, const char* func);
-
-#ifdef ON_HASH_PROTECT
-void set_stack_hash(my_stack_t* stk);
-hash_t stack_hash(my_stack_t* stk, hash_t* new_hash_data, hash_t* new_hash_stack);
-hash_t stack_hash_counter(const void* buffer, size_t buffer_bytes_amount);
-#endif /* ON_HASH_PROTECT */
+void print_int(void* elm, FILE* ostream);
+void print_10bytes(void* elm, FILE* ostream);
 
 #endif /* STACK_H */
 

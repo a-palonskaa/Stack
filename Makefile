@@ -12,7 +12,7 @@ CFLAGS = -Wall -std=c++17 -Wall -Wextra -Weffc++ -Wc++14-compat -Wmissing-declar
 		 -fstrict-overflow -fno-omit-frame-pointer -Wlarger-than=8192 -Wstack-protector        \
 		 -fPIE -Werror=vla
 
-SOURCES = main.cpp stack.cpp
+SOURCES = main.cpp stack.cpp verify.cpp pop_push.cpp hash.cpp
 BUILD_DIR = build
 OBJECTS = $(addprefix $(BUILD_DIR)/, $(SOURCES:%.cpp=%.o))
 DEPS = $(OBJECTS:%.o=%.d)
@@ -29,11 +29,11 @@ release: CFLAGS += -O2 -DNDEBUG
 release: $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
-	@$(CC) $(LDFLAGS) $^ -o $@
+	$(CC) $(LDFLAGS) $^ -o $@
 
 $(OBJECTS): $(BUILD_DIR)/%.o:%.cpp
 	@mkdir -p $(@D)
-	@$(CC) $(CFLAGS) -MP -MMD -c $< -o $@
+	$(CC) $(CFLAGS) -MP -MMD -c $< -o $@
 
 clean:
 	rm -f $(OBJECTS) $(EXECUTABLE) $(DEPS)
