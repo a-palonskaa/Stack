@@ -45,10 +45,14 @@ error_t stack_pop(my_stack_t* stk, void* elm) {
         return NO_ELEMNTS_TO_POP_ERROR;
     }
 
-    memcpy(elm, (char*) stk->data + (stk->size - 1) * stk->elm_width, stk->elm_width);
+    void* pointer = stk->data;
+    memcpy(elm, (char*) pointer + (stk->size - 1) * stk->elm_width, stk->elm_width);
+    memcpy((char*) pointer + (stk->size - 1) * stk->elm_width, stk->poison_value_buffer, stk->elm_width);
     stk->size--;
 
+STACK_DUMP_(stk);
     size_t new_capacity = stk->capacity / (CAPACITY_COEFF * CAPACITY_COEFF);
+
     if (stk->size <=  new_capacity && new_capacity > stk->base_capacity) {
         if (stack_resize(stk, SQUEEZE) != NO_ERRORS) {
             STACK_DUMP_(stk);
@@ -57,7 +61,6 @@ error_t stack_pop(my_stack_t* stk, void* elm) {
     }
 
     ON_HASH_PROTECT(set_stack_hash(stk);)
-
     STACK_DUMP_(stk);
     return NO_ERRORS;
 }

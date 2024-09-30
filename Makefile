@@ -17,12 +17,15 @@ BUILD_DIR = build
 OBJECTS = $(addprefix $(BUILD_DIR)/, $(SOURCES:%.cpp=%.o))
 DEPS = $(OBJECTS:%.o=%.d)
 EXECUTABLE = build/stack
+GUARD_L0 =
+GUARD_L1 = -D  CANARY_PROTECT
+GUARD_L2 = -D  CANARY_PROTECT -D  HASH_PROTECT
 
 .PHONY: all debug release
 
 all: release
 
-debug: CFLAGS += -D DEBUG -D GUARD_L2
+debug: CFLAGS += -O0 -D DEBUG $(GUARD_L2)
 debug: $(EXECUTABLE)
 
 release: CFLAGS += -O2 -DNDEBUG
@@ -36,7 +39,7 @@ $(OBJECTS): $(BUILD_DIR)/%.o:%.cpp
 	$(CC) $(CFLAGS) -MP -MMD -c $< -o $@
 
 clean:
-	rm -f $(OBJECTS) $(EXECUTABLE) $(DEPS)
+	rm -f $(OBJECTS) $(DEPS) $(EXECUTABLE)
 
 NODEPS = clean
 

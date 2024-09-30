@@ -26,15 +26,16 @@ typedef enum {
     NULL_ELEMENT_WIDTH_ERROR        = 0x00000200,
     STACK_ALREADY_INITIALIZED_ERROR = 0x00000400,
     CAPACITY_LIMIT_EXCEED_ERROR     = 0x00001000,
+    NON_VALID_POINTER_ERROR         = 0x00002000,
 
 #ifdef CANARY_PROTECT
-    LEFT_CANARY_PROTECT_FAILURE     = 0x00002000,
-    RIGTH_CANARY_PROTECT_FAILURE    = 0x00004000,
-    DATA_CANARY_PROTECT_FAILURE     = 0x00010000,
+    LEFT_CANARY_PROTECT_FAILURE     = 0x00004000,
+    RIGTH_CANARY_PROTECT_FAILURE    = 0x00010000,
+    DATA_CANARY_PROTECT_FAILURE     = 0x00020000,
 #endif /* CANARY_PROTECT */
 
 #ifdef HASH_PROTECT
-    HASH_PROTECTION_FAILED          = 0x00020000,
+    HASH_PROTECTION_FAILED          = 0x00040000,
 #endif /* HASH_PROTECT */
 } error_t;
 
@@ -63,6 +64,15 @@ const canary_t DATA_CANARY       = 0x3DAD;
 
 typedef void (*print_t) (void* elm, FILE* ostream);
 
+typedef enum {
+    NONE    = 0x00,
+    READ    = 0x01,
+    WRITE   = 0x02,
+    EXECUTE = 0x04,
+    DEFAULT = READ | WRITE,
+    ALL = READ | WRITE | EXECUTE,
+} ptr_protect_t;
+
 typedef struct {
 #ifdef CANARY_PROTECT
     canary_t left_canary;
@@ -76,6 +86,9 @@ typedef struct {
     uint64_t poison_value;
     char* poison_value_buffer;
     print_t print;
+#ifdef __APPLE__
+    ptr_protect_t data_permissions;
+#endif /* __APPLE__ */
 #ifdef DEBUG
     location_info_t location_info;
 #endif /* DEBUG */

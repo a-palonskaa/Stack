@@ -48,6 +48,8 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
     STATIC_ASSERT(MIN_CAPACITY > 0, Minimum_capacity_should_be_greater_than_0);
     stk->capacity = base_capacity > MIN_CAPACITY ?
                     base_capacity : MIN_CAPACITY;
+    stk->base_capacity = stk->capacity;
+
     stk->print = print;
 #ifdef CANARY_PROTECT
     if (!(stk->data = calloc(stk->capacity * stk->elm_width + 2 * sizeof(canary_t), sizeof(char)))) {
@@ -83,14 +85,18 @@ error_t stack_dtor(my_stack_t* stk) {
 #else
     free(stk->data);
 #endif /* CANARY_PROTECT */
+    free(stk->poison_value_buffer);
+    stk->poison_value_buffer = nullptr;
     stk->data = nullptr;
     stk->size = 0;
     stk->elm_width = 0;
     stk->capacity = 0;
     stk->error = NO_ERRORS;
 
+#ifdef HASH_PROTECT
     stk->hash_stack = 0;
     stk->hash_data  = 0;
+#endif /* HASH_PROTECT */
 
     STACK_DUMP_(stk);
     return NO_ERRORS;

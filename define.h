@@ -1,19 +1,6 @@
 #ifndef DEFINE_H
 #define DEFINE_H
 
-#ifdef GUARD_L0
-    #undef CANARY_PROTECT
-    #undef HASH_PROTECT
-#endif /* GUARD_L0 */
-#ifdef GUARD_L1
-    #undef HASH_PROTECT
-    #define CANARY_PROTECT
-#endif /* GUARD_L1 */
-#ifdef GUARD_L2
-    #define HASH_PROTECT
-    #define CANARY_PROTECT
-#endif /* GUARD_L2 */
-
 #define STATIC_ASSERT(COND,MSG)                           \
     do                                                    \
     {                                                     \
@@ -24,7 +11,7 @@
 
 #define _POS __FILE__, __LINE__, __FUNCTION__
 
-#define STACK_DUMP_(stk)      \
+#define STACK_DUMP_(stk)     \
         stack_dump(stk, _POS)
 
 #define STACK_ASSERT_(stk)      \

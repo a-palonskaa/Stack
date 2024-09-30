@@ -3,10 +3,15 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <time.h>
+#include <mach/mach.h>
+#include <mach/vm_region.h>
+#include <mach/mach_vm.h>
 
 #include "verify.h"
-#include "define.h"
+
+#ifdef HASH_PROTECT
 #include "hash.h"
+#endif /* HASH_PROTECT */
 
 static void print_time(FILE *ostream);
 static const char* stack_error_message(error_t error);
@@ -39,6 +44,9 @@ error_t stack_dump(const my_stack_t* stk, const char* file, size_t line, const c
     if (ostream == nullptr) {
         ostream = stdout;
     }
+
+    ptr_protect_t ptr_permissions = validate_ptr(stk->data);
+
     fprintf(ostream, "stack_t [%p]\n", stk);
     print_time(ostream);
     fprintf(ostream, "\n");
@@ -50,13 +58,27 @@ error_t stack_dump(const my_stack_t* stk, const char* file, size_t line, const c
 #endif
     fprintf(ostream, "\n[ERROR STATUS]: ");
     fprintf(ostream, "%s\n", stack_error_message(stk->error));
-
     fprintf(ostream, "element width = %zu\n", stk->elm_width);
     fprintf(ostream, "capacity = %zu\n", stk->capacity);
     fprintf(ostream, "size = %zu\n\n", stk->size);
-
-    fprintf(ostream, "data[%p]\n{\n", stk->data);
-    if (stk->data) {
+    if (ptr_permissions) {
+        fprintf(ostream, "data[%p]\n", stk->data);
+#ifdef DEBUG
+#ifdef __APPLE__
+        fprintf(ostream,"[data permissions]: ");
+        if (ptr_permissions & READ) {
+            fprintf(ostream, "READ ");
+        }
+        if (ptr_permissions & WRITE) {
+            fprintf(ostream, "WRITE ");
+        }
+        if (ptr_permissions & EXECUTE) {
+            fprintf(ostream, "EXECUTE");
+        }
+        fprintf(ostream, "\n");
+#endif /* __APPLE__ */
+#endif /* DEBUG */
+        fprintf(ostream, "{\n");
         for (size_t i = 0; i < stk->capacity; i++) {
             if (!memcmp((char*) stk->data + i * stk->elm_width, stk->poison_value_buffer, stk->elm_width)) {
                 fprintf(ostream, " [%08zX] = ", i);
@@ -77,7 +99,7 @@ error_t stack_dump(const my_stack_t* stk, const char* file, size_t line, const c
     fprintf(ostream, "RIGHT STACK CANARY PROTECT: \n\t%llX(without mask)\n\t%llx(with mask)\n\n",
                      stk->rigth_canary, stk->rigth_canary ^ (canary_t) stk);
 
-    if (stk->data) {
+    if (ptr_permissions) {
         canary_t rigth_canary = 0;
         canary_t left_canary  = 0;
 
@@ -130,10 +152,15 @@ error_t stack_error(my_stack_t* stk) {
         return INVALID_SIZE_ERROR;
     }
 
-    if (!stk->data) {
+    ptr_protect_t ptr_permissions = validate_ptr(stk->data);
+    if (!ptr_permissions) {
         stk->error = DATA_INVALID_POINTER_ERROR;
         return DATA_INVALID_POINTER_ERROR;
     }
+
+#ifdef __APPLE__
+    stk->data_permissions = ptr_permissions;
+#endif /* __APLE__ */
 
     if (!stk->elm_width) {
         stk->error = NULL_ELEMENT_WIDTH_ERROR;
@@ -176,6 +203,7 @@ static const char* stack_error_message(error_t error) {
         CASE_(NULL_ELEMENT_WIDTH_ERROR);
         CASE_(STACK_ALREADY_INITIALIZED_ERROR);
         CASE_(CAPACITY_LIMIT_EXCEED_ERROR);
+        CASE_(NON_VALID_POINTER_ERROR);
 #ifdef CANARY_PROTECT
         CASE_(LEFT_CANARY_PROTECT_FAILURE);
         CASE_(RIGTH_CANARY_PROTECT_FAILURE);
@@ -185,6 +213,7 @@ static const char* stack_error_message(error_t error) {
         CASE_(HASH_PROTECTION_FAILED);
 #endif /* HASH_PROTECT */
         default:
+            return "UNDEFINED ERROR";
             break;
     }
 }
@@ -198,4 +227,55 @@ static void print_time(FILE *ostream) {
     fprintf(ostream, "%02d.%02d.%d %02d:%02d:%02d ",
             time->tm_mday, time->tm_mon + 1, time->tm_year + 1900,
             time->tm_hour, time->tm_min,     time->tm_sec);
+}
+
+ptr_protect_t validate_ptr(const void* ptr) {
+    if (!ptr) {
+        return NONE;
+    }
+
+#ifdef __APPLE__
+    bool reading_permission   = false;
+    bool writing_permission   = false;
+    bool execution_permission = false;
+
+    mach_port_t task = mach_task_self();
+    kern_return_t kret;
+    vm_region_basic_info_data_t info;
+    mach_vm_size_t size;
+    mach_port_t object_name;
+    mach_msg_type_number_t count;
+    count = VM_REGION_BASIC_INFO_COUNT_64;
+    mach_vm_address_t address = 0;
+#ifdef __LP64__ //FIXME -  maybe smth here
+    memcpy(&address, &ptr, sizeof(uint64_t));
+#elif defined(__LP32__)
+    memset(&adress, 0, sizeof(uint64_t));
+    memcpy(&address + sizeof(uint32_t), &ptr, sizeof(uint32_t));
+#endif /*__LP64__*/
+    kret = mach_vm_region(task, &address, &size, VM_REGION_BASIC_INFO,
+                         (vm_region_info_t) &info, &count, &object_name);
+    if (kret == KERN_SUCCESS) {
+        ON_DEBUG(printf("Address: 0x%llx Size: 0x%llx\n", address, size);)
+
+        if (info.protection & VM_PROT_NONE) {
+            return NONE;
+        }
+
+        reading_permission   = info.protection & VM_PROT_READ;
+        writing_permission   = info.protection & VM_PROT_WRITE;
+        execution_permission = info.protection & VM_PROT_EXECUTE;
+    }
+    if (reading_permission) {
+        if (writing_permission) {
+            if (execution_permission) {
+                return ALL;
+            }
+            return DEFAULT;
+        }
+        return READ;
+    }
+    return WRITE;
+#endif /* __APPLE__ */
+    return ALL;
 }
