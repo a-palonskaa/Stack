@@ -12,11 +12,29 @@ CFLAGS = -Wall -std=c++17 -Wall -Wextra -Weffc++ -Wc++14-compat -Wmissing-declar
 		 -fstrict-overflow -fno-omit-frame-pointer -Wlarger-than=8192 -Wstack-protector        \
 		 -fPIE -Werror=vla
 
-SOURCES = main.cpp stack.cpp verify.cpp pop_push.cpp hash.cpp
+SOURCES_HASH = hash.cpp
+SOURCES_STACK = main.cpp stack.cpp verify.cpp pop_push.cpp
+
 BUILD_DIR = build
-OBJECTS = $(addprefix $(BUILD_DIR)/, $(SOURCES:%.cpp=%.o))
-DEPS = $(OBJECTS:%.o=%.d)
-EXECUTABLE = build/stack
+HASH_DIR = hash
+STACK_DIR = stack
+
+SRCS_STACK = $(addprefix $(STACK_DIR)/src/, $(SOURCES_STACK))
+OBJECTS_STACK = $(addprefix $(BUILD_DIR)/, $(SRCS_STACK:%.cpp=%.o))
+DEPS_STACK = $(OBJECTS_STACK:%.o=%.d)
+
+SRCS_HASH = $(addprefix $(HASH_DIR)/, $(SOURCES_HASH))
+OBJECTS_HASH = $(addprefix $(BUILD_DIR)/, $(SRCS_HASH:%.cpp=%.o))
+DEPS_HASH = $(OBJECTS_HASH:%.o=%.d)
+
+OBJECTS = $(OBJECTS_HASH) $(OBJECTS_STACK)
+DEPS = $(DEPS_HASH) $(DEPS_STACK)
+SOURCES = $(SRCS_HASH) $(SRCS_STACK)
+
+EXECUTABLE = build/meow
+
+CFLAGS += -I$(HASH_DIR) -I$(addprefix $(STACK_DIR)/, include)
+
 GUARD_L0 =
 GUARD_L1 = -D  CANARY_PROTECT
 GUARD_L2 = -D  CANARY_PROTECT -D  HASH_PROTECT

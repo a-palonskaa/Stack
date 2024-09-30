@@ -3,11 +3,13 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <time.h>
+#include "verify.h"
+
+#ifdef __APPLE__
 #include <mach/mach.h>
 #include <mach/vm_region.h>
 #include <mach/mach_vm.h>
-
-#include "verify.h"
+#endif /* APPLE */
 
 #ifdef HASH_PROTECT
 #include "hash.h"
@@ -17,6 +19,8 @@ static void print_time(FILE *ostream);
 static const char* stack_error_message(error_t error);
 static FILE** stack_dump_ostream();
 
+//------------------------------------------------------------------------------------------------
+
 static FILE** stack_dump_ostream() {
     static FILE* out = nullptr;
     return &out;
@@ -25,6 +29,8 @@ static FILE** stack_dump_ostream() {
 void set_stack_dump_ostream(FILE* ostream) {
     *stack_dump_ostream() = ostream;
 }
+
+//------------------------------------------------------------------------------------------------
 
 error_t stack_assert(my_stack_t* stk, const char* file, size_t line, const char* func) {
     if (stack_error(stk) != NO_ERRORS && stk->error != NO_ELEMNTS_TO_POP_ERROR) {
@@ -118,6 +124,49 @@ error_t stack_dump(const my_stack_t* stk, const char* file, size_t line, const c
     return stk->error;
 }
 
+//------------------------------------------------------------------------------------------------
+
+static void print_time(FILE *ostream) {
+    assert(ostream != nullptr);
+
+    time_t mytime = time(NULL);
+    struct tm *time = localtime(&mytime);
+
+    fprintf(ostream, "%02d.%02d.%d %02d:%02d:%02d ",
+            time->tm_mday, time->tm_mon + 1, time->tm_year + 1900,
+            time->tm_hour, time->tm_min,     time->tm_sec);
+}
+
+static const char* stack_error_message(error_t error) {
+    switch(error) {
+        CASE_(NO_ERRORS);
+        CASE_(MEMORY_ALLOCATION_ERROR);
+        CASE_(MEMORY_REALLOCATION_ERROR);
+        CASE_(ELEMENT_WIDTH_ERROR);
+        CASE_(NO_ELEMNTS_TO_POP_ERROR);
+        CASE_(NULL_CAPACITY_ERROR);
+        CASE_(INVALID_SIZE_ERROR);
+        CASE_(DATA_INVALID_POINTER_ERROR);
+        CASE_(NULL_ELEMENT_WIDTH_ERROR);
+        CASE_(STACK_ALREADY_INITIALIZED_ERROR);
+        CASE_(CAPACITY_LIMIT_EXCEED_ERROR);
+        CASE_(NON_VALID_POINTER_ERROR);
+#ifdef CANARY_PROTECT
+        CASE_(LEFT_CANARY_PROTECT_FAILURE);
+        CASE_(RIGTH_CANARY_PROTECT_FAILURE);
+        CASE_(DATA_CANARY_PROTECT_FAILURE);
+#endif /* CANARY_PROTECT */
+#ifdef HASH_PROTECT
+        CASE_(HASH_PROTECTION_FAILED);
+#endif /* HASH_PROTECT */
+        default:
+            return "UNDEFINED ERROR";
+            break;
+    }
+}
+
+//------------------------------------------------------------------------------------------------
+
 error_t stack_error(my_stack_t* stk) {
     assert(stk != nullptr);
 
@@ -189,45 +238,7 @@ error_t stack_error(my_stack_t* stk) {
     return NO_ERRORS;
 }
 
-
-static const char* stack_error_message(error_t error) {
-    switch(error) {
-        CASE_(NO_ERRORS);
-        CASE_(MEMORY_ALLOCATION_ERROR);
-        CASE_(MEMORY_REALLOCATION_ERROR);
-        CASE_(ELEMENT_WIDTH_ERROR);
-        CASE_(NO_ELEMNTS_TO_POP_ERROR);
-        CASE_(NULL_CAPACITY_ERROR);
-        CASE_(INVALID_SIZE_ERROR);
-        CASE_(DATA_INVALID_POINTER_ERROR);
-        CASE_(NULL_ELEMENT_WIDTH_ERROR);
-        CASE_(STACK_ALREADY_INITIALIZED_ERROR);
-        CASE_(CAPACITY_LIMIT_EXCEED_ERROR);
-        CASE_(NON_VALID_POINTER_ERROR);
-#ifdef CANARY_PROTECT
-        CASE_(LEFT_CANARY_PROTECT_FAILURE);
-        CASE_(RIGTH_CANARY_PROTECT_FAILURE);
-        CASE_(DATA_CANARY_PROTECT_FAILURE);
-#endif /* CANARY_PROTECT */
-#ifdef HASH_PROTECT
-        CASE_(HASH_PROTECTION_FAILED);
-#endif /* HASH_PROTECT */
-        default:
-            return "UNDEFINED ERROR";
-            break;
-    }
-}
-
-static void print_time(FILE *ostream) {
-    assert(ostream != nullptr);
-
-    time_t mytime = time(NULL);
-    struct tm *time = localtime(&mytime);
-
-    fprintf(ostream, "%02d.%02d.%d %02d:%02d:%02d ",
-            time->tm_mday, time->tm_mon + 1, time->tm_year + 1900,
-            time->tm_hour, time->tm_min,     time->tm_sec);
-}
+//------------------------------------------------------------------------------------------------
 
 ptr_protect_t validate_ptr(const void* ptr) {
     if (!ptr) {
@@ -279,3 +290,5 @@ ptr_protect_t validate_ptr(const void* ptr) {
 #endif /* __APPLE__ */
     return ALL;
 }
+
+//------------------------------------------------------------------------------------------------

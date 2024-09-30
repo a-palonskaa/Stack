@@ -7,12 +7,17 @@
 #include <stdlib.h>
 #include "define.h"
 
+//------------------------------------------------------------------------------------------------
+
 ON_HASH_PROTECT(typedef uint32_t hash_t;)
+typedef void (*print_t) (void* elm, FILE* ostream);
 
 const size_t CAPACITY_COEFF = 2;
 const size_t MIN_CAPACITY = 1;
 const size_t MAX_CAPACITY = 1e6;
 const uint64_t POISON_VALUE = 0xDEADDEADDEADDEAD;
+
+//------------------------------------------------------------------------------------------------
 
 typedef enum {
     NO_ERRORS                       = 0x00000000,
@@ -40,11 +45,22 @@ typedef enum {
 } error_t;
 
 typedef enum {
+    NONE    = 0x00,
+    READ    = 0x01,
+    WRITE   = 0x02,
+    EXECUTE = 0x04,
+    DEFAULT = READ | WRITE,
+    ALL = READ | WRITE | EXECUTE,
+} ptr_protect_t;
+
+typedef enum {
     EXPAND       = 0,
     SQUEEZE      = 1,
     SHINK_TO_FIT = 2,
 
 } mem_modify_t;
+
+//------------------------------------------------------------------------------------------------
 
 #ifdef DEBUG
     typedef struct {
@@ -62,16 +78,7 @@ const canary_t RIGTH_CANARY_MASK = 0xFBADBEEF;
 const canary_t DATA_CANARY       = 0x3DAD;
 #endif /* CANARY_PROTECT */
 
-typedef void (*print_t) (void* elm, FILE* ostream);
-
-typedef enum {
-    NONE    = 0x00,
-    READ    = 0x01,
-    WRITE   = 0x02,
-    EXECUTE = 0x04,
-    DEFAULT = READ | WRITE,
-    ALL = READ | WRITE | EXECUTE,
-} ptr_protect_t;
+//------------------------------------------------------------------------------------------------
 
 typedef struct {
 #ifdef CANARY_PROTECT
@@ -100,6 +107,8 @@ typedef struct {
     hash_t hash_data;
 #endif /* HASH_PROTECT */
 } my_stack_t;
+
+//------------------------------------------------------------------------------------------------
 
 error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print_t print
                    ON_DEBUG(, location_info_t location_info));

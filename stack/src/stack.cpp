@@ -78,6 +78,8 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
     return NO_ERRORS;
 }
 
+//------------------------------------------------------------------------------------------------
+
 error_t stack_dtor(my_stack_t* stk) {
     assert(stk != nullptr);
 #ifdef CANARY_PROTECT
@@ -138,28 +140,13 @@ error_t stack_resize(my_stack_t* stk, mem_modify_t mode) {
     return NO_ERRORS;
 }
 
+//------------------------------------------------------------------------------------------------
+
 static void fill_poison_value(my_stack_t* stk) {
     assert(stk != nullptr);
     for (size_t i = stk->size; i < stk->capacity; i++) {
         memcpy ((char*) stk->data + i * stk->elm_width, stk->poison_value_buffer, stk->elm_width);
     }
-//
-//     if (stk->elm_width <= sizeof(uint64_t)) {
-//         for (size_t i = stk->size; i < stk->capacity; i++) {
-//             memcpy((char*) stk->data + i * stk->elm_width, &stk->poison_value, stk->elm_width);
-//         }
-//     }
-//     else {
-//         for (size_t i = stk->size; i < stk->capacity; i++) {
-//
-//             size_t j = 0;
-//             for (; j < stk->elm_width - sizeof(uint64_t); j += sizeof(uint64_t)) {
-//                 memcpy((char*) stk->data + i * stk->elm_width + j, &stk->poison_value, sizeof(uint64_t));
-//             }
-//             memcpy((char*) stk->data + i * stk->elm_width + j, &stk->poison_value,
-//                     stk->elm_width - j);
-//         }
-//     }
 }
 
 static void set_poison_value(my_stack_t* stk, char* buffer) {
@@ -176,6 +163,8 @@ static void set_poison_value(my_stack_t* stk, char* buffer) {
     }
 }
 
+//------------------------------------------------------------------------------------------------
+
 void print_int(void* elm, FILE* ostream) {
     int* element = (int*) elm;
     fprintf(ostream, "%d", *element);
@@ -187,3 +176,5 @@ void print_10bytes(void* elm, FILE* ostream) {
         fprintf(ostream, "%.2x ", *(element + j));
     }
 }
+
+//------------------------------------------------------------------------------------------------

@@ -1,6 +1,8 @@
 #ifndef DEFINE_H
 #define DEFINE_H
 
+//------------------------------------------------------------------------------------------------
+
 #define STATIC_ASSERT(COND,MSG)                           \
     do                                                    \
     {                                                     \
@@ -11,6 +13,13 @@
 
 #define _POS __FILE__, __LINE__, __FUNCTION__
 
+#define CASE_(stk)   \
+    case stk:        \
+        return #stk; \
+        break
+
+//------------------------------------------------------------------------------------------------
+
 #define STACK_DUMP_(stk)     \
         stack_dump(stk, _POS)
 
@@ -19,6 +28,8 @@
 
 #define STACK_CTOR_(stk, size, capacity, print)                         \
         stack_ctor(stk, size, capacity, print ON_DEBUG(,{#stk, _POS}));
+
+//------------------------------------------------------------------------------------------------
 
 #ifdef DEBUG
     #define ON_DEBUG(...) __VA_ARGS__
@@ -31,10 +42,5 @@
 #else
     #define ON_HASH_PROTECT(...)
 #endif /* HASH_PROTECT */
-
-#define CASE_(stk)   \
-    case stk:        \
-        return #stk; \
-        break
 
 #endif /* DEFINE_H */

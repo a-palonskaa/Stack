@@ -53,4 +53,5 @@ hash_t stack_hash_counter(const void* buffer, size_t buffer_bytes_amount) {
     }
     return hash;
 }
+
 #endif /* HASH_PROTECT */

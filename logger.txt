@@ -1,108 +1,64 @@
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from stack.cpp:77(stack_ctor)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/stack.cpp:77(stack_ctor)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 2
 size = 0
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x1346040d0]
 {
  [00000000] = -559030611  (poison value)
  [00000001] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x4EED54
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 2
 size = 1
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x1346040d0]
 {
 *[00000000] = 0
  [00000001] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x4EE7C5
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 2
 size = 2
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x1346040d0]
 {
 *[00000000] = 0
 *[00000001] = 1
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x4EE7C5
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 4
 size = 3
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x1346040d0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -110,32 +66,18 @@ data[0x156606048]
  [00000003] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x28340A85
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 4
 size = 4
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x1346040d0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -143,32 +85,18 @@ data[0x156606048]
 *[00000003] = 3
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x28340A85
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 5
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x134604310]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -180,32 +108,18 @@ data[0x156606048]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 6
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x134604310]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -217,32 +131,18 @@ data[0x156606048]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 7
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x134604310]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -254,32 +154,18 @@ data[0x156606048]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 8
 
-data[0x156606048]
-[data permissions]: READ WRITE 
+data[0x134604310]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -291,32 +177,18 @@ data[0x156606048]
 *[00000007] = 7
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 9
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x134604540]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -336,32 +208,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 10
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x134604540]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -381,32 +239,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 11
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x134604540]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -426,32 +270,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 12
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x134604540]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -471,32 +301,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 13
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x134604540]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -516,32 +332,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 14
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x134604540]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -561,32 +363,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 15
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x134604540]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -606,32 +394,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 16
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x134604540]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -651,32 +425,18 @@ data[0x1567045f8]
 *[0000000F] = 15
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 17
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -712,32 +472,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 18
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -773,32 +519,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 19
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -834,32 +566,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:32(stack_push)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:32(stack_push)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 20
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -895,32 +613,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 19
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -956,32 +660,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 19
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1017,32 +707,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 18
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1078,32 +754,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 18
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1139,32 +801,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 17
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1200,32 +848,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 17
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1261,32 +895,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 16
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1322,32 +942,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 16
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1383,32 +989,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 15
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1444,32 +1036,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 15
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1505,32 +1083,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 14
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1566,32 +1130,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 14
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1627,32 +1177,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 13
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1688,32 +1224,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 13
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1749,32 +1271,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 12
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1810,32 +1318,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 12
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1871,32 +1365,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 11
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1932,32 +1412,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 11
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -1993,32 +1459,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 10
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2054,32 +1506,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 10
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2115,32 +1553,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 9
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2176,32 +1600,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 9
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2237,32 +1647,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 32
 size = 8
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2298,32 +1694,18 @@ data[0x1567045f8]
  [0000001F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x25454105
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 8
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2343,32 +1725,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 7
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2388,32 +1756,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 7
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2433,32 +1787,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 6
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2478,32 +1818,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 6
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2523,32 +1849,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 5
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2568,32 +1880,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 5
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2613,32 +1911,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 16
 size = 4
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2658,32 +1942,18 @@ data[0x1567045f8]
  [0000000F] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0xAB14C905
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 4
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2695,32 +1965,18 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 3
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2732,32 +1988,18 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 3
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2769,32 +2011,18 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 2
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2806,32 +2034,18 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 2
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
 *[00000001] = 1
@@ -2843,32 +2057,18 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 1
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
  [00000001] = -559030611  (poison value)
@@ -2880,32 +2080,18 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x8270CBA6
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 1
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
 *[00000000] = 0
  [00000001] = -559030611  (poison value)
@@ -2917,32 +2103,18 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x828627C1
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:53(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:53(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 0
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
  [00000000] = -559030611  (poison value)
  [00000001] = -559030611  (poison value)
@@ -2954,32 +2126,18 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x828627C1
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from pop_push.cpp:64(stack_pop)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/pop_push.cpp:64(stack_pop)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 4
 capacity = 8
 size = 0
 
-data[0x1567045f8]
-[data permissions]: READ WRITE 
+data[0x1346041c0]
 {
  [00000000] = -559030611  (poison value)
  [00000001] = -559030611  (poison value)
@@ -2991,24 +2149,11 @@ data[0x1567045f8]
  [00000007] = -559030611  (poison value)
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-LEFT DATA CANARY PROTECT:  3DAD
-RIGHT DATA CANARY PROTECT: 3DAD
-
-STACK HASH:  0x19EE8E9D
-DATA HASH:   0x5907A6E
 ---------------------------------------------------------------------------------
 
-stack_t [0x16aea31e8]
-30.09.2024 17:22:33 
-called from stack.cpp:101(stack_dtor)
-name &stk born at main.cpp:23(main)
+stack_t [0x16fb87240]
+30.09.2024 23:45:00 
+called from stack/src/stack.cpp:101(stack_dtor)
 
 [ERROR STATUS]: NO_ERRORS
 element width = 0
@@ -3017,14 +2162,5 @@ size = 0
 
 }
 
-LEFT  STACK CANARY PROTECT: 
-	16A2ACE06(without mask)
-	c0ffee(with mask)
-RIGHT STACK CANARY PROTECT: 
-	191478F07(without mask)
-	fbadbeef(with mask)
-
-STACK HASH:  0x0
-DATA HASH:   0x0
 ---------------------------------------------------------------------------------
 
