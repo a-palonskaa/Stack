@@ -11,7 +11,7 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
     assert(stk != nullptr);
 
     if (stack_error(stk) == NO_ERRORS) {
-        STACK_DUMP_(stk);
+        ON_DEBUG(STACK_DUMP_(stk);)
         return STACK_ALREADY_INITIALIZED_ERROR;
     }
     stk->error = NO_ERRORS;
@@ -30,7 +30,7 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
 
     if (!elm_size) {
         stk->error = ELEMENT_WIDTH_ERROR;
-        STACK_DUMP_(stk);
+        ON_DEBUG(STACK_DUMP_(stk);)
         return ELEMENT_WIDTH_ERROR;
     }
     stk->elm_width = elm_size;
@@ -39,7 +39,7 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
     char* buffer = (char*) calloc(stk->elm_width, sizeof(char));
     if (!buffer) {
         stk->error = MEMORY_ALLOCATION_ERROR;
-        STACK_DUMP_(stk);
+        ON_DEBUG(STACK_DUMP_(stk);)
         return MEMORY_ALLOCATION_ERROR;
     }
     set_poison_value(stk, buffer);
@@ -54,7 +54,7 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
 #ifdef CANARY_PROTECT
     if (!(stk->data = calloc(stk->capacity * stk->elm_width + 2 * sizeof(canary_t), sizeof(char)))) {
         stk->error = MEMORY_ALLOCATION_ERROR;
-        STACK_DUMP_(stk);
+        ON_DEBUG(STACK_DUMP_(stk);)
         return MEMORY_ALLOCATION_ERROR;
     };
 
@@ -65,7 +65,7 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
 #else
     if (!(stk->data = calloc(stk->capacity, stk->elm_width))) {
         stk->error = MEMORY_ALLOCATION_ERROR;
-        STACK_DUMP_(stk);
+        ON_DEBUG(STACK_DUMP_(stk);)
         return MEMORY_ALLOCATION_ERROR;
     };
 #endif /* CANARY_PROTECT */
@@ -74,7 +74,7 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
     ON_HASH_PROTECT(set_stack_hash(stk);)
 
     STACK_ASSERT_(stk);
-    STACK_DUMP_(stk);
+    ON_DEBUG(STACK_DUMP_(stk);)
     return NO_ERRORS;
 }
 
@@ -100,7 +100,7 @@ error_t stack_dtor(my_stack_t* stk) {
     stk->hash_data  = 0;
 #endif /* HASH_PROTECT */
 
-    STACK_DUMP_(stk);
+    ON_DEBUG(STACK_DUMP_(stk);)
     return NO_ERRORS;
 }
 
@@ -160,20 +160,6 @@ static void set_poison_value(my_stack_t* stk, char* buffer) {
         }
         memcpy(buffer + j, &stk->poison_value,
                 stk->elm_width - j);
-    }
-}
-
-//------------------------------------------------------------------------------------------------
-
-void print_int(void* elm, FILE* ostream) {
-    int* element = (int*) elm;
-    fprintf(ostream, "%d", *element);
-}
-
-void print_10bytes(void* elm, FILE* ostream) {
-    unsigned char* element = (unsigned char*) elm;
-    for (ssize_t j = 9; j >= 0; j--) {
-        fprintf(ostream, "%.2x ", *(element + j));
     }
 }
 

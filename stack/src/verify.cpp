@@ -258,7 +258,7 @@ ptr_protect_t validate_ptr(const void* ptr) {
     mach_msg_type_number_t count;
     count = VM_REGION_BASIC_INFO_COUNT_64;
     mach_vm_address_t address = 0;
-#ifdef __LP64__ //FIXME -  maybe smth here
+#ifdef __LP64__
     memcpy(&address, &ptr, sizeof(uint64_t));
 #elif defined(__LP32__)
     memset(&adress, 0, sizeof(uint64_t));

@@ -16,10 +16,11 @@ error_t stack_push(my_stack_t* stk, const void* elm) {
     if (stk->size == stk->capacity) {
         if (stk->capacity * CAPACITY_COEFF >= MAX_CAPACITY) {
             stk->error = CAPACITY_LIMIT_EXCEED_ERROR;
+            ON_DEBUG(STACK_DUMP_(stk);)
             return CAPACITY_LIMIT_EXCEED_ERROR;
         }
         if (stack_resize(stk, EXPAND) != NO_ERRORS) {
-            STACK_DUMP_(stk);
+            ON_DEBUG(STACK_DUMP_(stk);)
             return stk->error;
         }
     }
@@ -29,7 +30,7 @@ error_t stack_push(my_stack_t* stk, const void* elm) {
 
     ON_HASH_PROTECT(set_stack_hash(stk);)
 
-    STACK_DUMP_(stk);
+    ON_DEBUG(STACK_DUMP_(stk);)
     return NO_ERRORS;
 }
 
@@ -50,17 +51,16 @@ error_t stack_pop(my_stack_t* stk, void* elm) {
     memcpy((char*) pointer + (stk->size - 1) * stk->elm_width, stk->poison_value_buffer, stk->elm_width);
     stk->size--;
 
-STACK_DUMP_(stk);
     size_t new_capacity = stk->capacity / (CAPACITY_COEFF * CAPACITY_COEFF);
 
     if (stk->size <=  new_capacity && new_capacity > stk->base_capacity) {
         if (stack_resize(stk, SQUEEZE) != NO_ERRORS) {
-            STACK_DUMP_(stk);
+            ON_DEBUG(STACK_DUMP_(stk);)
             return stk->error;
         }
     }
 
     ON_HASH_PROTECT(set_stack_hash(stk);)
-    STACK_DUMP_(stk);
+    ON_DEBUG(STACK_DUMP_(stk);)
     return NO_ERRORS;
 }

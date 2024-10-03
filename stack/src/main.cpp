@@ -4,6 +4,7 @@
 #include "pop_push.h"
 #include "verify.h"
 #include "define.h"
+#include "printers.h"
 
 #ifndef HASH_PROTECT
 #include "hash.h"
@@ -34,6 +35,7 @@ int main() {
             printf("POPPED ELEMENT IS %d\n", el);
         }
     }
+
     stack_dtor(&stk);
 
     if (fclose(ostream) == EOF) {

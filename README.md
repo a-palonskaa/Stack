@@ -36,3 +36,20 @@ Run `make debug` to build debug version of the program.
 
 Run `make clean` to remove obj and dependencies files (clean build folder).
 
+---
+
+### Defines:
+- CANARY_PROTECT - enables canary protection for data and stack
+- HASH_PROTECT - enables hash protection (gjb2 method) for data and stack
+#### Guard levels:
+- GUARD_L0 - canary and hash protection are disabled
+- GUARD_L1 - canary protection is enabled, hash protection is disabled
+- GUARD_L2 - canary and hash protection are enabled
+
+
+Run `make` to build program in default mode.
+
+`./build/meow` to run program.
+
+> [!NOTE]
+> Default mode is `release` mode

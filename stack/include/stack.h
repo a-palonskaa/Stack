@@ -114,8 +114,6 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
                    ON_DEBUG(, location_info_t location_info));
 error_t stack_dtor(my_stack_t* stk);
 error_t stack_resize(my_stack_t* stk, mem_modify_t mode);
-void print_int(void* elm, FILE* ostream);
-void print_10bytes(void* elm, FILE* ostream);
 
 #endif /* STACK_H */
 
