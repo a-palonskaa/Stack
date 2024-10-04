@@ -27,8 +27,10 @@
         stack_assert(stk, _POS)
 
 #define STACK_CTOR_(stk, size, capacity, print)                         \
-        stack_ctor(stk, size, capacity, print ON_DEBUG(,{#stk, _POS}));
+        stack_ctor(stk, size, capacity, print ON_DEBUG(,{#stk, _POS}))
 
+#define NEW_STACK_(size, capacity, print)                        \
+        new_stack(size, capacity, print ON_DEBUG(,{"stk", _POS}));
 //------------------------------------------------------------------------------------------------
 
 #ifdef DEBUG

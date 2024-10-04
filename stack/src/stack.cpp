@@ -2,6 +2,7 @@
 #include "verify.h"
 #include "define.h"
 #include "hash.h"
+#include "my_stack.h"
 
 static void fill_poison_value(my_stack_t* stk);
 static void set_poison_value(my_stack_t* stk, char* buffer);
@@ -35,7 +36,7 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
     }
     stk->elm_width = elm_size;
 
-    stk->poison_value = POISON_VALUE;
+    stk->poison_value = POISON_VALUE; // FIXME: remove field, extra memory
     char* buffer = (char*) calloc(stk->elm_width, sizeof(char));
     if (!buffer) {
         stk->error = MEMORY_ALLOCATION_ERROR;
@@ -72,7 +73,6 @@ error_t stack_ctor(my_stack_t* stk, size_t elm_size, size_t base_capacity, print
     fill_poison_value(stk);
 
     ON_HASH_PROTECT(set_stack_hash(stk);)
-
     STACK_ASSERT_(stk);
     ON_DEBUG(STACK_DUMP_(stk);)
     return NO_ERRORS;
@@ -150,17 +150,35 @@ static void fill_poison_value(my_stack_t* stk) {
 }
 
 static void set_poison_value(my_stack_t* stk, char* buffer) {
-    if (stk->elm_width <= sizeof(uint64_t)) {
+    if (stk->elm_width <= sizeof(stk->poison_value)) {
         memcpy(buffer, &stk->poison_value, stk->elm_width);
     }
     else {
         size_t j = 0;
-        for (; j < stk->elm_width - sizeof(uint64_t); j += sizeof(uint64_t)) {
-            memcpy(buffer + j, &stk->poison_value, sizeof(uint64_t));
+        for (; j < stk->elm_width - sizeof(stk->poison_value); j += sizeof(stk->poison_value)) {
+            memcpy(buffer + j, &stk->poison_value, sizeof(stk->poison_value));
         }
-        memcpy(buffer + j, &stk->poison_value,
-                stk->elm_width - j);
+        memcpy(buffer + j, &stk->poison_value, stk->elm_width - j);
     }
 }
 
+//FIXME - benchmark lib
+
 //------------------------------------------------------------------------------------------------
+
+my_stack_t* new_stack(size_t elm_size, size_t base_capacity, print_t print
+                   ON_DEBUG(, location_info_t location_info)) {
+    my_stack_t* stack = (my_stack_t*) calloc(sizeof(my_stack_t), sizeof(char));
+
+    if (stack_ctor(stack, elm_size, base_capacity, print ON_DEBUG(, location_info)) != NO_ERRORS) {
+        return nullptr;
+    }
+
+    return stack;
+}
+
+void delete_stack(my_stack_t* stk) {
+    stack_dtor(stk);
+    free(stk);
+    stk = nullptr;
+}

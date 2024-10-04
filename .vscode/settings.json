@@ -8,6 +8,17 @@
         "string_view": "cpp",
         "bitset": "cpp",
         "initializer_list": "cpp",
-        "__config": "cpp"
+        "__config": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp"
     }
 }

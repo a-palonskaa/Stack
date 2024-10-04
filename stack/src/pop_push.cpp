@@ -3,6 +3,7 @@
 #include <assert.h>
 #include <stdlib.h>
 
+#include "my_stack.h"
 #include "pop_push.h"
 #include "define.h"
 #include "verify.h"
@@ -43,6 +44,7 @@ error_t stack_pop(my_stack_t* stk, void* elm) {
 
     if (stk->size == 0)  {
         stk->error = NO_ELEMNTS_TO_POP_ERROR;
+        ON_DEBUG(STACK_DUMP_(stk);)
         return NO_ELEMNTS_TO_POP_ERROR;
     }
 
@@ -53,7 +55,12 @@ error_t stack_pop(my_stack_t* stk, void* elm) {
 
     size_t new_capacity = stk->capacity / (CAPACITY_COEFF * CAPACITY_COEFF);
 
-    if (stk->size <=  new_capacity && new_capacity > stk->base_capacity) {
+    //============================
+    // stk->size = 0;
+    // stk->base_capacity = 0;
+    //============================
+
+    if (stk->size <= new_capacity && new_capacity > stk->base_capacity) {
         if (stack_resize(stk, SQUEEZE) != NO_ERRORS) {
             ON_DEBUG(STACK_DUMP_(stk);)
             return stk->error;

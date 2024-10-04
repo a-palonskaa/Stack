@@ -10,40 +10,33 @@ CFLAGS = -Wall -std=c++17 -Wall -Wextra -Weffc++ -Wc++14-compat -Wmissing-declar
 		 -Wno-varargs -Wstack-protector -Wsuggest-override -Wbounds-attributes-redundant \
 		 -Wlong-long -Wopenmp -fcheck-new -fsized-deallocation -fstack-protector 		 \
 		 -fstrict-overflow -fno-omit-frame-pointer -Wlarger-than=8192 -Wstack-protector  \
-		 -fPIE -Werror=vla
+		 -fPIE -Werror=vla -march=x86-64
 
 LDFLAGS =
 
-SOURCES_HASH = hash.cpp
-SOURCES_STACK = main.cpp stack.cpp verify.cpp pop_push.cpp printers.cpp
-
+SOURCES_STACK = stack.cpp verify.cpp pop_push.cpp printers.cpp hash.cpp
+SRC_ALL = $(SOURCES_STACK) main.cpp
 BUILD_DIR = build
-HASH_DIR = hash
 STACK_DIR = stack
 
-SRCS_STACK = $(addprefix $(STACK_DIR)/src/, $(SOURCES_STACK))
-OBJECTS_STACK = $(addprefix $(BUILD_DIR)/, $(SRCS_STACK:%.cpp=%.o))
-DEPS_STACK = $(OBJECTS_STACK:%.o=%.d)
-
-SRCS_HASH = $(addprefix $(HASH_DIR)/, $(SOURCES_HASH))
-OBJECTS_HASH = $(addprefix $(BUILD_DIR)/, $(SRCS_HASH:%.cpp=%.o))
-DEPS_HASH = $(OBJECTS_HASH:%.o=%.d)
-
-OBJECTS = $(OBJECTS_HASH) $(OBJECTS_STACK)
-DEPS = $(DEPS_HASH) $(DEPS_STACK)
-SOURCES = $(SRCS_HASH) $(SRCS_STACK)
+SOURCES = $(addprefix $(STACK_DIR)/src/, $(SOURCES_STACK))
+OBJECTS = $(addprefix $(BUILD_DIR)/, $(SOURCES:%.cpp=%.o))
+DEPS = $(OBJECTS:%.o=%.d)
+SOURCES_ALL =  $(addprefix $(STACK_DIR)/src/, $(SRC_ALL))
+OBJECTS_ALL = $(addprefix $(BUILD_DIR)/, $(SOURCES_ALL:%.cpp=%.o))
+DEPS_ALL = $(OBJECTS_ALL:%.o=%.d)
 
 EXECUTABLE = build/meow
 
-CFLAGS += -I$(HASH_DIR) -I$(addprefix $(STACK_DIR)/, include)
+CFLAGS += -I$(addprefix $(STACK_DIR)/, include)
 
 GUARD_L0 =
 GUARD_L1 = -D  CANARY_PROTECT
 GUARD_L2 = -D  CANARY_PROTECT -D  HASH_PROTECT
 
-.PHONY: all debug release
+.PHONY: all debug release lib
 
-all: release
+all: lib
 
 debug: CFLAGS += -O0 -D DEBUG $(GUARD_L2)
 debug: $(EXECUTABLE)
@@ -51,15 +44,26 @@ debug: $(EXECUTABLE)
 release: CFLAGS += -O2 -DNDEBUG
 release: $(EXECUTABLE)
 
-$(EXECUTABLE): $(OBJECTS)
+OUT = build/libstack.a
+LDFLAGS = -L$(BUILD_DIR) -lstack
+
+lib: $(OUT)
+
+$(OUT):$(OBJECTS)
+	@ar rcs $(OUT) $(OBJECTS)
+
+$(EXECUTABLE): $(OBJECTS_ALL)
 	@$(CC) $(LDFLAGS) $^ -o $@
 
-$(OBJECTS): $(BUILD_DIR)/%.o:%.cpp
+$(OBJECTS_ALL): $(BUILD_DIR)/%.o:%.cpp
 	@mkdir -p $(@D)
 	@$(CC) $(CFLAGS) -MP -MMD -c $< -o $@
 
 clean:
-	@rm -f $(OBJECTS) $(DEPS) $(EXECUTABLE)
+	@rm -f $(OBJECTS_ALL) $(DEPS_ALL) $(EXECUTABLE)
+
+echo:
+	echo $(OBJECTS_ALL)  $(DEPS_ALL)
 
 NODEPS = clean
 
